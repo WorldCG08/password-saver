@@ -1,0 +1,4 @@
+cryptography==3.4.7
+pyclip==0.5.4
+SpeechRecognition==3.8.1
+pyaudio==0.2.11
