@@ -6,6 +6,7 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 import uuid
 import pyclip
+from .login import Login
 
 
 def help_menu():
@@ -59,7 +60,7 @@ class Controller:
     def __del__(self):
         self.connection.close()
 
-    def save(self, login_entity):
+    def save(self, login_entity: Login):
         """Put login object to save to database"""
 
         password = _encrypt(login_entity.password)

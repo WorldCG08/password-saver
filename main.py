@@ -3,6 +3,7 @@ from helpers.controller import Controller, help_menu
 from helpers.login import Login
 import speech_recognition as sr
 
+
 def main():
     controller = Controller()
     print("Welcome to password saver!")
